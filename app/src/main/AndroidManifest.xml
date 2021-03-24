@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zs.test.searchgitrepo">
+    package="com.zs.app.plants">
 
     <application
-        android:name=".App"
+        android:name="com.zs.app.plants.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SearchGitRepo">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.Plants">
+        <activity android:name="com.zs.app.plants.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

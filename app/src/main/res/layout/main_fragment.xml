@@ -9,7 +9,7 @@
 
         <variable
             name="viewModel"
-            type="com.zs.test.searchgitrepo.ui.main.MainViewModel" />
+            type="com.zs.app.plants.ui.main.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

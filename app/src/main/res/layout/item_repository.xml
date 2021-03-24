@@ -6,7 +6,7 @@
 
         <variable
             name="item"
-            type="com.zs.test.searchgitrepo.ui.main.model.RepositoryItemViewModel" />
+            type="com.zs.app.plants.ui.main.model.RepositoryItemViewModel" />
     </data>
 
 
