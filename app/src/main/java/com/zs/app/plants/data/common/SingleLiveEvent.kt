@@ -3,11 +3,11 @@ package com.zs.app.plants.data.common
 import android.util.Log
 import androidx.annotation.MainThread
 import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.Observer
 import java.util.concurrent.atomic.AtomicBoolean
 
-open class SingleLiveEvent<T> : MutableLiveData<T>() {
+open class SingleLiveEvent<T> : MediatorLiveData<T>() {
 
     private val mPending = AtomicBoolean(false)
 
