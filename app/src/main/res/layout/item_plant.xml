@@ -6,7 +6,7 @@
 
         <variable
             name="plant"
-            type="com.zs.app.plants.presentation.ui.main.plant.PlantViewModel" />
+            type="com.zs.app.plants.presentation.ui.main.plant.ItemPlantViewModel" />
     </data>
 
     <androidx.cardview.widget.CardView

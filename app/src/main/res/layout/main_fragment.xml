@@ -10,10 +10,6 @@
         <variable
             name="viewModel"
             type="com.zs.app.plants.presentation.ui.main.MainViewModel" />
-
-        <variable
-            name="toolbar"
-            type="com.zs.app.plants.presentation.ui.toolbar.ToolbarViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,15 +17,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".presentation.ui.main.MainActivity">
-
-        <include
-            android:id="@+id/toolBar"
-            layout="@layout/view_toolbar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:toolbarViewModel="@{toolbar}"></include>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/plantsRecyclerView"
@@ -43,9 +30,10 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/newButton"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:src="@android:drawable/ic_input_add"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"></com.google.android.material.floatingactionbutton.FloatingActionButton>
 

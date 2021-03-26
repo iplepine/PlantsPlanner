@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.zs.app.plants.PlantsApp
+import com.zs.app.plants.R
 import com.zs.app.plants.databinding.MainFragmentBinding
 import com.zs.app.plants.presentation.ui.base.BaseFragment
+import com.zs.app.plants.presentation.ui.edit.EditPlantFragment
 import javax.inject.Inject
 
 class MainFragment : BaseFragment() {
@@ -19,7 +21,7 @@ class MainFragment : BaseFragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        PlantsApp.appComponent.bindMainFragment(this)
+        PlantsApp.appComponent.injectMainFragment(this)
     }
 
     override fun onCreateView(
@@ -44,5 +46,14 @@ class MainFragment : BaseFragment() {
     }
 
     private fun initViews() {
+        binding.newButton.setOnClickListener {
+            if (isAdded) {
+                fragmentManager?.apply {
+                    beginTransaction()
+                        .replace(R.id.container, EditPlantFragment())
+                        .commit()
+                }
+            }
+        }
     }
 }

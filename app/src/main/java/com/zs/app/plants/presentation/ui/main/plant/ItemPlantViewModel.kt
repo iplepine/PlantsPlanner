@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import javax.inject.Inject
 
-class PlantViewModel @Inject constructor(
+class ItemPlantViewModel @Inject constructor(
 ) : ViewModel() {
 
     val image = MutableLiveData<String>()
