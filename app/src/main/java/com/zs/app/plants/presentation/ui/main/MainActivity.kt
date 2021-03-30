@@ -6,8 +6,10 @@ import com.zs.app.plants.PlantsApp
 import com.zs.app.plants.R
 import com.zs.app.plants.databinding.MainActivityBinding
 import com.zs.app.plants.presentation.ui.toolbar.ToolbarViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     @Inject
@@ -18,7 +20,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        PlantsApp.appComponent.injectActivity(this)
         binding = MainActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.toolbarViewModel = toolbarViewModel

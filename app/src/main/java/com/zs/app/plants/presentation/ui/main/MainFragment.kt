@@ -21,7 +21,7 @@ class MainFragment : BaseFragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        PlantsApp.appComponent.injectMainFragment(this)
+        //PlantsApp.appComponent.injectMainFragment(this)
     }
 
     override fun onCreateView(

@@ -2,8 +2,9 @@ package com.zs.app.plants.data
 
 import com.zs.app.plants.domain.entity.Plant
 import com.zs.app.plants.domain.repository.PlantRepository
+import javax.inject.Inject
 
-class PlantRepositoryImpl: PlantRepository {
+class PlantRepositoryImpl @Inject constructor() : PlantRepository {
     override fun getAllPlants(userID: String): List<Plant> {
         return ArrayList()
     }
